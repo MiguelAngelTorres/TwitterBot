@@ -1,2 +1,4 @@
 # TwitterBot
-Send and generate automatic tweets
+
+Send and generate automatic tweets.
+
