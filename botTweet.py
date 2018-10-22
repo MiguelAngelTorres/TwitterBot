@@ -5,14 +5,14 @@ import tweepy, time, sys, linecache
 from random import randint
 
 #enter the corresponding information from your Twitter application:
-CONSUMER_KEY = 'this'#keep the quotes, replace this with your consumer key
-CONSUMER_SECRET = 'this'#keep the quotes, replace this with your consumer secret key
-ACCESS_KEY = 'this'#keep the quotes, replace this with your access token
-ACCESS_SECRET = 'this'#keep the quotes, replace this with your access token secret
+CONSUMER_KEY = '7sBpXnfnRTmYp47GZWSWvy5i7'#keep the quotes, replace this with your consumer key
+CONSUMER_SECRET = 'JdznzrORLwtuuT9a41v0pADK8clNuh8JOMPHTrpZ61GetxkbeJ'#keep the quotes, replace this with your consumer secret key
+ACCESS_KEY = '998574665969950722-QsEXMg0sUcx4tUi9qhyCQxKtLuciPa5'#keep the quotes, replace this with your access token
+ACCESS_SECRET = '6LXmWt2IRmXyRQ82nsfiqxpgrDEmsJ3LcSyKL7LSvcKnL'#keep the quotes, replace this with your access token secret
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
- 
+
 title1fs=open('Titulo/1fs.txt','r')
 title1fp=open('Titulo/1fp.txt','r')
 title1ms=open('Titulo/1ms.txt','r')
@@ -107,7 +107,7 @@ while True:
 		if aux1 < t2mp :
 			titulo+=' '+linecache.getline('Titulo/2mp.txt', aux1).rstrip('\n')
 		else :
-			titulo+=linecache.getline('Titulo/2n.txt', aux1-t2mp).rstrip('\n')		
+			titulo+=' '+linecache.getline('Titulo/2n.txt', aux1-t2mp).rstrip('\n')		
 	
 	
 ###  Choose description
@@ -129,5 +129,6 @@ while True:
 		descrip+=' que '+linecache.getline('Predicados/PdPM.txt', aux3).rstrip('\n')
 	
 	api.update_status(titulo+'\n\n'+descrip)
-	time.sleep(15)#Tweet every 15 seconds
+#	print(titulo+'\n\n'+descrip)
+#	time.sleep(5)#Tweet every 15 seconds
 
