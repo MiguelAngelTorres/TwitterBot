@@ -5,10 +5,10 @@ import tweepy, time, sys, linecache
 from random import randint
 
 #enter the corresponding information from your Twitter application:
-CONSUMER_KEY = '7sBpXnfnRTmYp47GZWSWvy5i7'#keep the quotes, replace this with your consumer key
-CONSUMER_SECRET = 'JdznzrORLwtuuT9a41v0pADK8clNuh8JOMPHTrpZ61GetxkbeJ'#keep the quotes, replace this with your consumer secret key
-ACCESS_KEY = '998574665969950722-QsEXMg0sUcx4tUi9qhyCQxKtLuciPa5'#keep the quotes, replace this with your access token
-ACCESS_SECRET = '6LXmWt2IRmXyRQ82nsfiqxpgrDEmsJ3LcSyKL7LSvcKnL'#keep the quotes, replace this with your access token secret
+CONSUMER_KEY = ''#keep the quotes, replace this with your consumer key
+CONSUMER_SECRET = ''#keep the quotes, replace this with your consumer secret key
+ACCESS_KEY = ''#keep the quotes, replace this with your access token
+ACCESS_SECRET = ''#keep the quotes, replace this with your access token secret
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
